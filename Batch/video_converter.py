@@ -30,7 +30,8 @@ def convert_avi_to_mp4(input_directory, resize=None):
             # Resize the video to the new size
             video_clip = video_clip.resize(resize)
             
-            video_clip.write_videofile(mp4_filepath, codec='libx264', audio_codec='aac')
+            video_clip.write_videofile(mp4_filepath, codec='libx264', audio_codec='aac',
+                           ffmpeg_params=['-profile:v', 'baseline', '-pix_fmt', 'yuv420p'])
             
             # Remove the original .avi file if needed
             # os.remove(avi_filepath)
@@ -45,6 +46,7 @@ if __name__ == "__main__":
     selected_directory = os.path.dirname(os.path.realpath(__file__))
 
     resize_option = input("Enter the new size for the videos as 'width,height' or leave blank to keep original size: ")
+    
     
     resize = None
     if resize_option:
