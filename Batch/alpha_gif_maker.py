@@ -5,7 +5,7 @@ from PIL import Image
 import os
 
 # Define your video file and output settings
-video_file = r"D:\Efiles\Unreal_Projects\20240321_PipelineDebug\Medias\Functionless.mp4"
+video_file = r"D:\Efiles\Unreal_Projects\20240513_UpdatePipeline\Content\Movies\Functionless.mp4"
 output_folder = os.path.dirname(video_file)
 output_gif = os.path.join(output_folder, "output.gif")
 frame_rate = 10  # Adjust based on your preference
