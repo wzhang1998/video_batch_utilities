@@ -63,7 +63,7 @@ def convert_and_export_video(video_path):
             print(f'Error occurred: {e}')
 
 # Example usage
-video_path = r'C:\Users\wenyi\Desktop\granite_sprite_test\Videos\Flamingo_01.HD.4x.mov'
+video_path = r'C:\Users\wenyi\Desktop\granite_sprite_test\Videos\shadow.HD.4x.mov'
 files_txt = 'files.txt'
 output_file = 'extended_output.mov'
 num_repeats = 25
