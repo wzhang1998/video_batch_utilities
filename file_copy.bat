@@ -43,3 +43,4 @@ if "%source_date%" GTR "%target_date%" (
 
 endlocal
 pause
+
